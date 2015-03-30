@@ -1,0 +1,28 @@
+How can you use the staging area to make sure you have one commit per logical change?
+	The staging area allows you to add the files which you have changed, thus giving
+	the user more control over what files need to have a commit addressed.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+	Branches are a wonderful tool for experimenting and creating 'versions' of one's work.
+	You can easily checkout from one branch to another, create commits, and record your
+	work history in a organized fashion.
+
+How do the diagrams help you visualize the branch structure?
+	The branch structure visual is tons of help; especially the arrows, which show that 
+	the commits at the very end (or at the tip of the branch) are the most recent, while
+	the ones at the 'bottom' are the oldest commits (or the first ones).
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+	All commits are combined, however, if there was a third branch, then the commits from that branch do not get added and the commits are lost (unless you know the commit IDs). By using
+	git log --graph -oneline, the commits and branches are clearly laid out and we can see
+	when the merge occured and what was brought along *actually, we can't, but we can see the
+	merged branches commits, which are the ones that go into the 'master' branch*.
+
+ What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+ 	The pros of Git automatically merging is that you do not need to manually add
+ 	in the changes. And that fact that it prompts you to check any conflicts, really helps out
+ 	the user to proof their work before finalizing commits. The con in all this is that it
+ 	will be a bit time consuming, however, you get the benefit of having accurate (and user
+ 	proofed) materials.
+
+ 
